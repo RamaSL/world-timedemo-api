@@ -29,7 +29,19 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-			</plugin>
+				<configuration>
+					<cloudHubDeployment>
+				 	<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.4.0</muleVersion>
+						<username>RamaKSL</username>
+						<password>Sulochana@14</password>
+						<environment>Sandbox</environment>
+						<applicationName>world-timedemo-api</applicationName>
+						<workers>1</workers>
+						<objectStoreV2>true</objectStoreV2> 
+				</cloudHubDeployment>
+				</configuration>
+		  	</plugin>
 		</plugins>
 	</build>
 
